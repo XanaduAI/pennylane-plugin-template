@@ -1,27 +1,6 @@
 PennyLane Plugin Template
 #########################
 
-.. image:: https://img.shields.io/travis/com/XanaduAI/plugin-name/master.svg
-    :alt: Travis
-    :target: https://travis-ci.com/XanaduAI/plugin-name
-
-.. image:: https://img.shields.io/codecov/c/github/xanaduai/plugin-name/master.svg
-    :alt: Codecov coverage
-    :target: https://codecov.io/gh/XanaduAI/plugin-name
-
-.. image:: https://img.shields.io/codacy/grade/33d12f7d2d0644968087e33966ed904e.svg
-    :alt: Codacy grade
-    :target: https://app.codacy.com/app/XanaduAI/plugin-name
-
-.. image:: https://img.shields.io/readthedocs/plugin-name.svg
-    :alt: Read the Docs
-    :target: https://plugin-name.readthedocs.io
-
-.. image:: https://img.shields.io/pypi/v/plugin-name.svg
-    :alt: PyPI
-    :target: https://pypi.org/project/plugin-name
-
-
 This template repository provides the boilerplate and file structure required to easily create your
 own PennyLane plugin.
 
