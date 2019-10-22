@@ -60,7 +60,7 @@ Contributing
 
 We welcome contributions - simply fork the Plugin Name repository, and then make a
 `pull request <https://help.github.com/articles/about-pull-requests/>`_ containing your contribution.
-All contributers to PennyLane-SF will be listed as authors on the releases.
+All contributers to Plugin-Name will be listed as authors on the releases.
 
 We also encourage bug reports, suggestions for new features and enhancements, and even links to cool
 projects or applications built on PennyLane and Target Framework.
@@ -86,7 +86,7 @@ Support
 =======
 
 - **Source Code:** https://github.com/XanaduAI/plugin-name
-- **Issue Tracker:** https://github.com/XanaduAI/plugin-namesf/issues
+- **Issue Tracker:** https://github.com/XanaduAI/plugin-name/issues
 
 If you are having issues, please let us know by posting the issue on our GitHub issue tracker.
 
