@@ -60,9 +60,9 @@ add_module_names = False
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-import pennylane_forest
+import plugin_name
 # The full version, including alpha/beta/rc tags.
-release = pennylane_forest.__version__
+release = plugin_name.__version__
 
 # The short X.Y version.
 version = re.match(r'^(\d+\.\d+)', release).expand(r'\1')

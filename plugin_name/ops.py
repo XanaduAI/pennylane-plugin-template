@@ -15,9 +15,9 @@
 Custom operations
 =================
 
-**Module name:** :mod:`pennylane_forest.ops`
+**Module name:** :mod:`plugin_name.ops`
 
-.. currentmodule:: pennylane_forest.ops
+.. currentmodule:: plugin_name.ops
 
 Sometimes the Target Framework may accept more operations
 than available by core PennyLane. The plugin can define
