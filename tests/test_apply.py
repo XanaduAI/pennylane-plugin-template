@@ -122,7 +122,7 @@ class TestStateApply:
         assert np.allclose(res, expected, **tol)
 
     def test_qubit_state_vector(self, init_state, device, tol):
-        """Test PauliX application"""
+        """Test initialization from a state vector."""
         dev = device(1)
         state = init_state(1)
 
@@ -149,7 +149,7 @@ class TestStateApply:
 
     @pytest.mark.parametrize("name,mat", single_qubit)
     def test_single_qubit_no_parameters(self, init_state, device, name, mat, tol):
-        """Test PauliX application"""
+        """Test application of non-parametrized single-qubit gates."""
         dev = device(1)
         state = init_state(1)
 
@@ -169,7 +169,7 @@ class TestStateApply:
     @pytest.mark.parametrize("theta", [0.5432, -0.232])
     @pytest.mark.parametrize("name,func", single_qubit_param)
     def test_single_qubit_parameters(self, init_state, device, name, func, theta, tol):
-        """Test PauliX application"""
+        """Test application of parametrized single-qubit gates."""
         dev = device(1)
         state = init_state(1)
 
@@ -210,7 +210,7 @@ class TestStateApply:
 
     @pytest.mark.parametrize("name,mat", two_qubit)
     def test_two_qubit_no_parameters(self, init_state, device, name, mat, tol):
-        """Test PauliX application"""
+        """Test application of non-parametrized two-qubit gates."""
         dev = device(2)
         state = init_state(2)
 
@@ -229,6 +229,7 @@ class TestStateApply:
 
     @pytest.mark.parametrize("mat", [U, U2])
     def test_qubit_unitary(self, init_state, device, mat, tol):
+        """Test application of qubit unitaries."""
         N = int(np.log2(len(mat)))
         dev = device(N)
         state = init_state(N)
@@ -259,6 +260,7 @@ class TestStateApply:
 
     @pytest.mark.parametrize("name, mat", three_qubit)
     def test_three_qubit_no_parameters(self, init_state, device, name, mat, tol):
+        """Test application of non-parametrized three-qubit gates."""
         dev = device(3)
         state = init_state(3)
 
@@ -278,7 +280,7 @@ class TestStateApply:
     @pytest.mark.parametrize("theta", [0.5432, -0.232])
     @pytest.mark.parametrize("name,func", two_qubit_param)
     def test_single_qubit_parameters(self, init_state, device, name, func, theta, tol):
-        """Test PauliX application"""
+        """Test application of parametrized single-qubit gates."""
         dev = device(2)
         state = init_state(2)
 
@@ -335,7 +337,7 @@ class TestHardwareApply:
                 dev.apply("BasisState", [0, 1, 2, 3], [state])
 
     def test_qubit_state_vector(self, init_state, device, tol):
-        """Test PauliX application"""
+        """Test initialization from a state vector."""
         dev = device(1)
         state = init_state(1)
 
@@ -364,7 +366,7 @@ class TestHardwareApply:
 
     @pytest.mark.parametrize("name,mat", single_qubit)
     def test_single_qubit_no_parameters(self, init_state, device, name, mat, tol):
-        """Test PauliX application"""
+        """Test application of non-parametrized single-qubit gates."""
         dev = device(1)
         state = init_state(1)
 
@@ -384,7 +386,7 @@ class TestHardwareApply:
     @pytest.mark.parametrize("theta", [0.5432, -0.232])
     @pytest.mark.parametrize("name,func", single_qubit_param)
     def test_single_qubit_parameters(self, init_state, device, name, func, theta, tol):
-        """Test PauliX application"""
+        """Test application of parametrized single-qubit gates."""
         dev = device(1)
         state = init_state(1)
 
@@ -425,7 +427,7 @@ class TestHardwareApply:
 
     @pytest.mark.parametrize("name,mat", two_qubit)
     def test_two_qubit_no_parameters(self, init_state, device, name, mat, tol):
-        """Test PauliX application"""
+        """Test application of non-parametrized two-qubit gates."""
         dev = device(2)
         state = init_state(2)
 
@@ -444,6 +446,7 @@ class TestHardwareApply:
 
     @pytest.mark.parametrize("mat", [U, U2])
     def test_qubit_unitary(self, init_state, device, mat, tol):
+        """Test application of qubit unitaries."""
         N = int(np.log2(len(mat)))
         dev = device(N)
         state = init_state(N)
@@ -474,6 +477,7 @@ class TestHardwareApply:
 
     @pytest.mark.parametrize("name, mat", three_qubit)
     def test_three_qubit_no_parameters(self, init_state, device, name, mat, tol):
+        """Test application of non-parametrized three-qubit gates."""
         dev = device(3)
         state = init_state(3)
 
@@ -493,7 +497,7 @@ class TestHardwareApply:
     @pytest.mark.parametrize("theta", [0.5432, -0.232])
     @pytest.mark.parametrize("name,func", two_qubit_param)
     def test_single_qubit_parameters(self, init_state, device, name, func, theta, tol):
-        """Test PauliX application"""
+        """Test application of parameterized single qubit gates."""
         dev = device(2)
         state = init_state(2)
 
