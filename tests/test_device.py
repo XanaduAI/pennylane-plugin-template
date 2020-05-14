@@ -16,7 +16,7 @@ import pytest
 
 import numpy as np
 
-from plugin_name.qiskit_device import z_eigs
+from plugin_name.device import z_eigs
 from plugin_name import Device1
 
 
